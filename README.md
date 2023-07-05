@@ -1,11 +1,11 @@
-About erdantic
-==============
+About erdantic-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/erdantic-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/drivendataorg/erdantic
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/erdantic-feedstock/blob/main/LICENSE.txt)
 
 Summary: Entity relationship diagrams for Python data model classes like Pydantic.
 
