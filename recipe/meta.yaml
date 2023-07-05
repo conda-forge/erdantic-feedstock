@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - dataclasses
     - importlib-metadata
-    - pydantic
+    - pydantic <2
     - pygraphviz
-    - python >=3.6
+    - python >=3.7
     - typer
     - typing-extensions
 
