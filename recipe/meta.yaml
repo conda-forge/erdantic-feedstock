@@ -25,7 +25,8 @@ requirements:
   run:
     - dataclasses
     - importlib-metadata
-    - pydantic <2
+    - pydantic >=2
+    - pydantic-core
     - pygraphviz
     - python >=3.7
     - typer
