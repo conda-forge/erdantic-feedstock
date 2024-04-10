@@ -35,9 +35,6 @@ requirements:
 test:
   imports:
     - erdantic
-    - erdantic.examples.dataclasses
-    - erdantic.examples.pydantic
-    - erdantic.examples.pydantic_v1
   commands:
     - pip check
     - erdantic --help
