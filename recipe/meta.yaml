@@ -1,5 +1,5 @@
 {% set name = "erdantic" %}
-{% set version = "1.0.0" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erdantic-{{ version }}.tar.gz
-  sha256: 27e87fe06f6a913142b014ff21f470729531863349dadc55c2fc2bdd9ee03eb0
+  sha256: a2a739b2d1e086c3f9bd863dc86860bb33bee95d7faeb1f7280a1e07a8ada6b3
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - pydantic-core
     - pygraphviz
     - python >=3.7
-    - typer
+    - typer < 0.10.0
     - typing-extensions
 
 test:
