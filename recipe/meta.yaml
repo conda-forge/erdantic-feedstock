@@ -1,5 +1,5 @@
 {% set name = "erdantic" %}
-{% set version = "0.7.1" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erdantic-{{ version }}.tar.gz
-  sha256: a2a739b2d1e086c3f9bd863dc86860bb33bee95d7faeb1f7280a1e07a8ada6b3
+  sha256: 27e87fe06f6a913142b014ff21f470729531863349dadc55c2fc2bdd9ee03eb0
 
 build:
   number: 0
@@ -23,13 +23,13 @@ requirements:
     - python >=3.7
     - flit-core >=3.2, <4
   run:
-    - dataclasses
-    - importlib-metadata
     - pydantic >=2
     - pydantic-core
     - pygraphviz
-    - python >=3.7
-    - typer <0.10.0
+    - python >=3.8
+    - sortedcontainers-pydantic
+    - typenames
+    - typer
     - typing-extensions
 
 test:
