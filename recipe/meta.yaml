@@ -29,7 +29,7 @@ requirements:
     - pydantic-core
     - pygraphviz
     - python >=3.7
-    - typer < 0.10.0
+    - typer <0.10.0
     - typing-extensions
 
 test:
