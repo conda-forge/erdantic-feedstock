@@ -35,6 +35,7 @@ requirements:
 test:
   imports:
     - erdantic
+    - erdantic.examples
   commands:
     - pip check
     - erdantic --help
