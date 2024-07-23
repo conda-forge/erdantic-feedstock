@@ -1,5 +1,5 @@
 {% set name = "erdantic" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erdantic-{{ version }}.tar.gz
-  sha256: d84cae68674954e311a5593c5082d85875972f254738fef4e67c7903f2107e8e
+  sha256: 274dcd7b8b4129c3460a5ab808606b20090466a1d49f67777e3e74b0c89ff429
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - pygraphviz
     - python >=3.8
     - sortedcontainers-pydantic
-    - typenames
+    - typenames >=1.3
     - typer
     - typing-extensions
 
