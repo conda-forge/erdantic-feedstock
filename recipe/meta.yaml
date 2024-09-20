@@ -1,5 +1,5 @@
 {% set name = "erdantic" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erdantic-{{ version }}.tar.gz
-  sha256: 274dcd7b8b4129c3460a5ab808606b20090466a1d49f67777e3e74b0c89ff429
+  sha256: e35cc1babb37b8dc62fc220ce61a167afaebd11e391c6bd53882918a3b01644b
 
 build:
   number: 0
