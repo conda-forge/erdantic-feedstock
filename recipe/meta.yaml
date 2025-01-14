@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/erdantic-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/erdantic-{{ version }}.tar.gz
   sha256: e35cc1babb37b8dc62fc220ce61a167afaebd11e391c6bd53882918a3b01644b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - erdantic=erdantic.cli:app
@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - hatchling
   run:
     - pydantic >=2
     - pydantic-core
     - pygraphviz
-    - python >=3.8
+    - python >={{ python_min }}
     - sortedcontainers-pydantic
     - typenames >=1.3
     - typer
@@ -41,6 +41,7 @@ test:
     - erdantic --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/drivendataorg/erdantic
